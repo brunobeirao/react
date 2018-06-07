@@ -46,15 +46,17 @@
 
 	'use strict';
 
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
 	__webpack_require__(1);
 
-	__webpack_require__(5);
+	var _react = __webpack_require__(5);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactDom = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"react-dom\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var produto = {
 	    nome: 'Caneta Bic Preta',
@@ -62,22 +64,11 @@
 	    desconto: 0.05
 	};
 
-	exports.default = function (props) {
-	    return React.createElement(
-	        'h1',
-	        null,
-	        'Ol\xE1'
-	    );
-	};
-
-	function clone(objeto) {
-	    return _extends({}, objeto);
-	}
-
-	var novoProduto = clone(produto);
-	novoProduto.nome = 'Caneta Bic Azul';
-
-	console.log(produto, novoProduto);
+	_reactDom2.default.render(_react2.default.createElement(
+	    'h1',
+	    null,
+	    'Ol\xE1 React'
+	), document.getElementById('app'));
 
 /***/ },
 /* 1 */
